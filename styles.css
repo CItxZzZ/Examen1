@@ -56,15 +56,3 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
-
-body {
-  margin: auto;
-  width: 640px; 
-  padding: 50px;
-  font-family: 'Arial', sans-serif; 
-  color: #33475b;    
-      }
-
-img{
-  padding: 10px; 
-}
