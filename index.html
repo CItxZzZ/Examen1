@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="styles.css">
+    <title>Venta De Software y Hardware</title>
+</head>
+<body>
+    <h1>Venta de Software y Hardware</h1>
+    <h2>Productos disponibles</h2>
+    <table>
+        <tr>
+            <th>Producto</th>
+            <th>Marca</th>
+            <th>precio</th>
+        </tr>
+        <tr>
+            <td>Motherboard</td>
+            <td>Gygabite B-550 M DS3H</td>
+            <td>$2000</td>
+        </tr>
+        <tr>
+            <td>Licencia antivirus</td>
+            <td>360 total security</td>
+            <td>$500</td>
+        </tr>
+        <tr>
+            <td>Mouse</td>
+            <td>Logitech g 502</td>
+            <td>$800</td>
+        </tr>
+    </table>
+
+    <h2>Características</h2>
+    <ul>
+        <li>Amplia variedad de productos</li>
+        <li>Precios competitivos</li>
+        <li>Envío a todo la republica mexicana</li>
+    </ul>
+
+    <h2>Fecha y Hora</h2>
+    <p id="time"></p>
+
+    <script>
+    function updateTime() {
+    document.getElementById("time").innerHTML = new Date().toLocaleString()
+}
+
+setInterval(updateTime, 1000);
+    </script>
+
+    <h2>Comentarios</h2>
+    <form action="/submit-comment" method="post">
+        <label for="name">Nombre:</label><br/>
+        <input type="text" id="name" name="name"/><br/>
+        <label for="comment">Comentario:</label><br/>
+        <textarea id="comment" name="comment"></textarea><br/>
+        <input type="submit" value="Enviar"/>
+    </form>
+
+</body>
+</html>
